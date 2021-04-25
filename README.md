@@ -54,3 +54,15 @@ systemctl enable java_spring.service
 ```
 /etc/init.d/java_spring start
 ```
+
+
+##`nginx`
+```
+      location /java/spring {
+
+                proxy_pass       http://localhost:8080/;
+                proxy_set_header Host      $host;
+                proxy_set_header X-Real-IP $remote_addr;
+        }
+```
+
