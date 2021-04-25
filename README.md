@@ -56,7 +56,7 @@ systemctl enable java_spring.service
 ```
 
 
-##`nginx`
+### `nginx`
 ```
       location /java/spring {
 
